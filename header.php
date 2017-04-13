@@ -8,11 +8,7 @@
             wp_title('|', true, 'right');   // wp_get_document_title()
         ?>
     </title>
-    
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <script src='<?php echo get_template_directory_uri(); ?>/js1.js'></script>
-
     <?php wp_head(); ?>   
 </head>
 
