@@ -1,19 +1,16 @@
 <?php get_header(); ?>
 
-<span> This is index.php page</span>
 <div class="row">
-    <!-- main and sidebar -->
-    <main class="col-md-9">
+    <main class="row col-md-9">
         <!-- first loop-->
         <?php while ( have_posts() ) : the_post(); ?>
             <?php if( in_category('winter') ){ ?>
                 <article <?php post_class('post winter-post'); ?> id="post-<?php the_ID(); ?>">
             <?php } else if( in_category('spring') ){ ?>
                 <article <?php post_class('post spring-post'); ?> id="post-<?php the_ID(); ?>">
-            <?php }else{ ?>
-<!--                <article --><?php //post_class('post'); ?><!-- id="post---><?php //the_ID(); ?><!--">-->
-                <?php continue; ?>
-            <?php } ?>
+            <?php }else{
+                continue;
+            } ?>
                 <header>
                     <h2>
                         <a href="<?php the_permalink(); ?>" rel="bookmark"> <?php the_title(); ?> <?php the_post_thumbnail(); ?> </a>
@@ -23,7 +20,7 @@
                 </header>
             </article>
         <?php endwhile;
-          wp_reset_postdata(); ?>
+        wp_reset_postdata(); ?>
 
         <!--second loop-->
         <hr>
@@ -47,33 +44,11 @@
 
         <nav>
             <?php the_posts_pagination(); ?>
-<!--            <ul class="pagination">-->
-<!--                <li>-->
-<!--                    <a href="#" aria-label="Previous">-->
-<!--                        <span aria-hidden="true">&laquo;</span>-->
-<!--                    </a>-->
-<!--                </li>-->
-<!--                <li><a href="#">1</a></li>-->
-<!--                <li><a href="#">2</a></li>-->
-<!--                <li><a href="#">3</a></li>-->
-<!--                <li><a href="#">4</a></li>-->
-<!--                <li><a href="#">5</a></li>-->
-<!--                <li>-->
-<!--                    <a href="#" aria-label="Next">-->
-<!--                        <span aria-hidden="true">&raquo;</span>-->
-<!--                    </a>-->
-<!--                </li>-->
-<!--            </ul>-->
         </nav>
         
     </main>
+    
 
-
-<!--    <aside class="sidebar col-md-3">-->
-<!--        <h3>This is sidebar</h3>-->
-<!--        --><?php //dynamic_sidebar( 'sidebar-1' ); ?>
-<!--    </aside>-->
-<!--</div>-->
 <?php get_sidebar(); ?>    
 <?php get_footer(); ?>
     

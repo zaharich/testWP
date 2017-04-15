@@ -12,7 +12,7 @@
     <?php wp_head(); ?>   
 </head>
 
-<body <?php body_class(); ?>>       <!-- html output <body class="class1 class2 class3"> -->
+<body class="row">       <!-- html output <body class="class1 class2 class3"> -->
 
 <div class="container">
     <header class="row">
@@ -22,9 +22,9 @@
         </div>
 
         <?php wp_nav_menu( array(
-            'theme_location'=>'top',
-            'container'=>'nav',
+            'theme_location' =>'top',
+            'container'      =>'nav',
             'container_class'=>'navbar-collapse',
-            'menu_class'=>'menu nav navbar-nav'
+            'menu_class'     =>'menu nav navbar-nav'
         )); ?>
     </header>
