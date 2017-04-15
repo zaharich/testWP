@@ -25,9 +25,14 @@
         <!--second loop-->
         <hr>
         <?php
-        //global $post;
+        global $post;
         $args = array('category' => get_cat_ID('summer') . "," . get_cat_ID('autumn'));
-        $myposts = get_posts( $args );
+        if( in_category('summer') ){ ?>
+            <article <?php post_class('post summer-post'); ?> id="post-<?php the_ID(); ?>">
+        <?php } else if( in_category('autumn') ){ ?>
+            <article <?php post_class('post autumn-post'); ?> id="post-<?php the_ID(); ?>">
+        <?php } ?>
+        <?php $myposts = get_posts( $args );
         foreach( $myposts as $post ){
             setup_postdata($post); ?>
             <article <?php post_class('post summer-post'); ?> id="post-<?php the_ID(); ?>">
