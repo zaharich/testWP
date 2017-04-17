@@ -17,6 +17,7 @@
 <div class="container">
     <header class="row">
         <div class="col-md-12 clearfix background-header-footer">
+            <?php the_custom_logo(); ?>
             <img class="alignleft logo img-circle" src='<?php echo get_template_directory_uri(); ?> /img/shampagne.jpg'>
             <h1 class="site-title">Праздники России</h1>
         </div>

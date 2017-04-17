@@ -45,4 +45,5 @@ register_nav_menus(array(
 
 //Turn ON thumbnails
 add_theme_support('post-thumbnails');
+add_theme_support('custom-logo');
 set_post_thumbnail_size(100, 100, true);
