@@ -30,7 +30,11 @@
         $myposts = get_posts( $args );
         foreach( $myposts as $post ){
             setup_postdata($post); ?>
-            <article <?php post_class('post summer-post'); ?> id="post-<?php the_ID(); ?>">
+            <?php if( in_category('summer') ){ ?>
+                <article <?php post_class('post summer-post'); ?> id="post-<?php the_ID(); ?>">
+            <?php }else if( in_category('autumn') ){ ?>
+                <article <?php post_class('post autumn-post'); ?> id="post-<?php the_ID(); ?>">
+            <?php } ?>
                 <header>
                     <h2>
                         <a href="<?php the_permalink(); ?>"> <?php the_title(); ?> </a>

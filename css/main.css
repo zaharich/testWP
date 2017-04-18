@@ -77,6 +77,14 @@ nav ul li {
   background-image: url(../img/spring1.png);
 }
 
+.summer-post {
+  background-image: url(../img/summer.jpg);
+}
+
+.autumn-post {
+  background-image: url(../img/autumn1.jpg);
+}
+
 img.wp-post-image {
   float: left;
   margin: 5px 10px 5px 5px;
