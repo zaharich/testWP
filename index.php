@@ -4,13 +4,7 @@
     <main class="row col-md-9">
         <!-- first loop-->
         <?php while ( have_posts() ) : the_post(); ?>
-            <?php if( in_category('winter') ){ ?>
-                <article <?php post_class('post winter-post'); ?> id="post-<?php the_ID(); ?>">
-            <?php } else if( in_category('spring') ){ ?>
-                <article <?php post_class('post spring-post'); ?> id="post-<?php the_ID(); ?>">
-            <?php }else{
-                continue;
-            } ?>
+            <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
                 <header>
                     <h2>
                         <a href="<?php the_permalink(); ?>" rel="bookmark"> <?php the_title(); ?> <?php the_post_thumbnail(); ?> </a>
@@ -25,16 +19,12 @@
         <!--second loop-->
         <hr>
         <?php
-        //global $post;
+        global $post;
         $args = array('category' => get_cat_ID('summer') . "," . get_cat_ID('autumn'));
         $myposts = get_posts( $args );
         foreach( $myposts as $post ){
             setup_postdata($post); ?>
-            <?php if( in_category('summer') ){ ?>
-                <article <?php post_class('post summer-post'); ?> id="post-<?php the_ID(); ?>">
-            <?php }else if( in_category('autumn') ){ ?>
-                <article <?php post_class('post autumn-post'); ?> id="post-<?php the_ID(); ?>">
-            <?php } ?>
+            <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
                 <header>
                     <h2>
                         <a href="<?php the_permalink(); ?>"> <?php the_title(); ?> </a>

@@ -69,19 +69,19 @@ nav ul li {
 
 
 /*=====  posts  ======*/
-.winter-post {
+.category-winter_party {
   background-image: url(../img/winter2.png);
 }
 
-.spring-post {
+.category-spring_party {
   background-image: url(../img/spring1.png);
 }
 
-.summer-post {
+.category-summer_party {
   background-image: url(../img/summer.jpg);
 }
 
-.autumn-post {
+.category-autumn_party {
   background-image: url(../img/autumn1.jpg);
 }
 
