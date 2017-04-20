@@ -45,6 +45,9 @@
   min-width: 30px;
 }
 
+body {
+  color: #00A8EF;
+}
 
 /*=====  header   ====*/
 .top-header {
@@ -70,7 +73,7 @@ nav ul li {
 
 /*=====  posts  ======*/
 .category-winter_party {
-  background-image: url(../img/winter2.png);
+  background-image: url(../img/winter.png);
 }
 
 .category-spring_party {
@@ -85,7 +88,18 @@ nav ul li {
   background-image: url(../img/autumn1.jpg);
 }
 
-img.wp-post-image {
+.wp-post-image {
   float: left;
   margin: 5px 10px 5px 5px;
+  border: 2px solid deepskyblue;
+  border-radius: 10px;
+  height: 100px;
+  width: 200px;
+}
+
+article.post {
+  border: 1px solid deepskyblue;
+  border-radius: 20px;
+  text-align: justify;
+  padding: 15px;
 }
