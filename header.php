@@ -22,6 +22,7 @@
             'theme_location' =>'top',
             'container'      =>'nav',
             'container_class'=>'navbar-collapse',
-            'menu_class'     =>'menu nav navbar-nav'
+            'menu_class'     =>'menu nav navbar-nav',
+            'menu_id'        =>'top-menu'
         )); ?>
     </header>

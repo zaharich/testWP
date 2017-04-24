@@ -90,7 +90,7 @@ nav ul li {
 
 .wp-post-image {
   float: left;
-  margin: 5px 10px 5px 5px;
+  margin: 5px;
   border: 2px solid deepskyblue;
   border-radius: 10px;
   height: 100px;
@@ -102,4 +102,6 @@ article.post {
   border-radius: 20px;
   text-align: justify;
   padding: 15px;
+  overflow: hidden;
+  height: 19.5em;
 }

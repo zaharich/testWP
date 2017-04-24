@@ -15,9 +15,9 @@ function wptest_scripts_styles(){
     wp_enqueue_style('bootstrap');
 
     //Регистрация скриптов
-    //wp_register_script('js1', get_template_directory_uri() . '/js/js1.js' );
+    wp_register_script('js1', get_template_directory_uri() . '/js/js1.js' );
     //Подключение скриптов
-    //wp_enqueue_script('js1');
+    wp_enqueue_script('js1');
 }
 
 add_action('wp_enqueue_scripts', 'wptest_scripts_styles', 1);
