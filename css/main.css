@@ -64,6 +64,15 @@ body {
   font-size: 6em;
 }
 
+#top-menu {
+  border: 1px solid deepskyblue;
+  border-radius: 15px;
+  background-color: rgba(0, 191, 255, 0.1);
+  width: 100%;
+  z-index: 1000;
+  margin: 15px 0px;
+}
+
 nav ul li {
   font-family: "Georgia";
   font-size: 1.5em;
