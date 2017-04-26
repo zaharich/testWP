@@ -21,7 +21,7 @@
         <?php wp_nav_menu( array(
             'theme_location' =>'top',
             'container'      =>'nav',
-            'container_class'=>'navbar-collapse',
+            'container_class'=>'navbar',
             'menu_class'     =>'menu nav navbar-nav',
             'menu_id'        =>'top-menu'
         )); ?>
