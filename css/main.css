@@ -71,6 +71,52 @@ article.post {
   text-align: justify;
   padding: 15px;
   overflow: hidden;
-  height: 19.5em;
+  /*height: 19.5em;*/
+}
+
+
+/*======= social reference ==========*/
+div.share {
+  border: 1px solid black;
+  text-align: right;
+}
+.share a {
+  display: inline-block;
+  vertical-align: inherit;
+  text-align: right;
+  margin: 5px 0 0 2px;
+  padding: 0px;
+  font-size: 0px;
+  width: 40px;
+  height: 40px;
+  background: url("../img/soc_icon.png") no-repeat scroll 0px 0px transparent;
+}
+
+.share a.vkontakte {
+  background: url("../img/soc_icon.png") no-repeat scroll -168px 0px transparent;
+}
+.share a.google {
+  background: url("../img/soc_icon.png") no-repeat scroll -252px 0px transparent;
+}
+.share a.livejournal {
+  background: url("../img/soc_icon.png") no-repeat scroll -336px 0px transparent;
+}
+.share a.twitter {
+  background: url("../img/soc_icon.png") no-repeat scroll -42px 0px transparent;
+}
+.share a.mail {
+  background: url("../img/soc_icon.png") no-repeat scroll -294px 0px transparent;
+}
+.share a.odnoklassniki {
+  background: url("../img/soc_icon.png") no-repeat scroll -126px 0px transparent;
+}
+.share a.evernote {
+  background: url("../img/soc_icon.png") no-repeat scroll -420px 0px transparent;
+}
+.share a.email {
+  background: url("../img/soc_icon.png") no-repeat scroll -504px 0px transparent;
+}
+.share a.print {
+  background: url("../img/soc_icon.png") no-repeat scroll -546px 0px transparent;
 }
 

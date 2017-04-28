@@ -17,7 +17,8 @@
 <!--        <i><span class="post-span"> Posted on --><?php //the_time('j F Y'); ?><!-- by --><?php //the_author_posts_link(); ?><!-- </span></i>-->
 <!--        <br>-->
     </header>
-    <button href="<?php the_permalink(); ?>" class="btn"> Подробнее </button>
-    <button id="button-expand" class="btn"> Развернуть </button>
+    <a href="<?php the_permalink(); ?>" class="btn btn-info"> Подробнее</a>
+    <button id="button-expand" class="btn btn-info"> Развернуть </button>
+    
 </article><!-- #post-## -->
 <br>
