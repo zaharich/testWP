@@ -77,9 +77,19 @@ article.post {
 
 /*======= social reference ==========*/
 div.share {
-  border: 1px solid black;
+  border: 1px solid deepskyblue;
+  background-color: rgba(0, 191, 255, 0.2);
+  border-radius: 10px;
   text-align: right;
+  padding: 5px;
 }
+
+div.share > span {
+  float: left;
+  margin: 10px;
+  font: 2em sans-serif;
+}
+
 .share a {
   display: inline-block;
   vertical-align: inherit;

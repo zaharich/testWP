@@ -15,7 +15,7 @@
 <span> Posted on <?php the_time('j F Y'); ?> by <?php the_author_posts_link(); ?> </span>
 
 <div class="share">
-    <span> Поделись с друзьями!</span><br>
+    <span> Поделись с друзьями!</span>
     <a onClick="window.open('https://vkontakte.ru/share.php?url=<?php the_permalink(); ?>','sharer','toolbar=0,status=0,width=700,height=400');" href="javascript: void(0)" class="vkontakte"></a>
     <a onClick="window.open('https://www.facebook.com/sharer.php?u=<?php the_permalink(); ?>','sharer','toolbar=0,status=0,width=700,height=400');" href="javascript: void(0)" class="facebook"></a>
     <a onClick="window.open('https://plus.google.com/share?url=<?php the_permalink(); ?>','sharer','toolbar=0,status=0,width=700,height=400');" href="javascript: void(0)" class="google"></a>
