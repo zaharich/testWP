@@ -43,15 +43,12 @@ nav ul li {
 .category-winter_party {
   background-image: url(../img/winter.png);
 }
-
 .category-spring_party {
   background-image: url(../img/spring1.png);
 }
-
 .category-summer_party {
   background-image: url(../img/summer.jpg);
 }
-
 .category-autumn_party {
   background-image: url(../img/autumn1.jpg);
 }
@@ -76,6 +73,15 @@ article.post {
 
 
 /*======= social reference ==========*/
+div.share-vert {
+  position: fixed;
+  display: block;
+  z-index: 2000;
+  top: 40%;
+  right: 0;
+  border-radius: 10px 0px 0px 10px !important;
+}
+
 div.share {
   border: 1px solid deepskyblue;
   background-color: rgba(0, 191, 255, 0.2);
@@ -100,6 +106,10 @@ div.share > span {
   width: 40px;
   height: 40px;
   background: url("../img/soc_icon.png") no-repeat scroll 0px 0px transparent;
+}
+
+.share-vert a {
+  display: block;
 }
 
 .share a.vkontakte {
@@ -130,3 +140,10 @@ div.share > span {
   background: url("../img/soc_icon.png") no-repeat scroll -546px 0px transparent;
 }
 
+
+/*========== footer =============*/
+footer {
+  position: relative;
+  background-color: deepskyblue;
+  margin: 5px 0px;
+}
